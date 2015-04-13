@@ -1,11 +1,13 @@
 package com.vn.hm;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
 
 import com.d3.base.BaseFragment;
+import com.jwetherell.heart_rate_monitor.HeartbeatView;
 import com.vn.hm.fragment.HeartTrackerFragment;
 import com.vn.hm.fragment.RegsiterFragment;
 
@@ -54,7 +56,10 @@ public class MenuFragment extends BaseFragment implements OnClickListener {
 			mContentFragment = new HomeFragment();
 			break;
 		case R.id.menu_heart_tracker_id:
-			mContentFragment = new HeartTrackerFragment(); 
+			//mContentFragment = new HeartTrackerFragment(); 
+//			Intent intentTracker = new Intent(getActivity(), HeartbeatView.class);
+//			getActivity().startActivity(intentTracker);
+			starActivity(HeartbeatView.class);
 			break;
 		case R.id.menu_health_nutrition_id:
 			mContentFragment = new HomeFragment();
@@ -84,5 +89,13 @@ public class MenuFragment extends BaseFragment implements OnClickListener {
 			fca.switchContent(fragment,"");
 		}
 
+	}
+	
+	public void starActivity(Class<?> newClass){
+		Intent intent = new Intent(getActivity(), newClass);
+		if (getActivity() instanceof MainActivity) {
+			MainActivity fca = (MainActivity) getActivity();
+			fca.startActivity(intent);
+		}
 	}
 }
