@@ -10,7 +10,7 @@ public class HeartTrackerFragment extends BaseFragment {
 	@Override
 	public int getlayout() {
 		// TODO Auto-generated method stub
-		return R.layout.activity_main;
+		return R.layout.track_heart_layout;
 	}
 
 	@Override

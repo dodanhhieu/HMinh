@@ -6,6 +6,7 @@ import android.view.View.OnClickListener;
 import android.widget.TextView;
 
 import com.d3.base.BaseFragment;
+import com.vn.hm.fragment.HeartTrackerFragment;
 import com.vn.hm.fragment.RegsiterFragment;
 
 public class MenuFragment extends BaseFragment implements OnClickListener {
@@ -53,7 +54,7 @@ public class MenuFragment extends BaseFragment implements OnClickListener {
 			mContentFragment = new HomeFragment();
 			break;
 		case R.id.menu_heart_tracker_id:
-			mContentFragment = new HomeFragment();
+			mContentFragment = new HeartTrackerFragment(); 
 			break;
 		case R.id.menu_health_nutrition_id:
 			mContentFragment = new HomeFragment();
