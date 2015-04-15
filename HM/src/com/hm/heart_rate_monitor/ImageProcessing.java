@@ -1,4 +1,4 @@
-package com.jwetherell.heart_rate_monitor;
+package com.hm.heart_rate_monitor;
 
 /**
  * This abstract class is used to process images.

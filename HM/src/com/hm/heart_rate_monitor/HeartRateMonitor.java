@@ -1,4 +1,4 @@
-package com.jwetherell.heart_rate_monitor;
+package com.hm.heart_rate_monitor;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -64,7 +64,7 @@ public class HeartRateMonitor extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.main);
 
         preview = (SurfaceView) findViewById(R.id.preview);
         previewHolder = preview.getHolder();

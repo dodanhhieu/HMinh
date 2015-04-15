@@ -29,7 +29,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.jwetherell.heart_rate_monitor.HeartbeatView"></activity>
+        <activity android:name="com.hm.heart_rate_monitor.HeartRateMonitor"></activity>
     </application>
 
 </manifest>
